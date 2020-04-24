@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obyvatelé v krajích ČR</title>
+    <script src="js.js"></script>
+    <style>
+        body {
+        font-family: Calibri,Arial;
+        margin: 0;
+        }
+
+        .header {
+        padding: 10px;
+        text-align: center;
+        background: #919191;
+        color: white;
+        font-size: 100%;
+        }
+
+        .svg{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>POPULACE V KRAJÍCH ČESKÉ REPUBLIKY</h1>
+        <p>Po kliknutí se zobrazí počet obyvatel ve vybranám a srovnání s ostatními kraji</p>
+    </div>
+    
+    <div class="svg">
+        
+        <p id = "pocetobyvatel"><span>Populace kraje:</span></p>
+        <object id="kraje" type="image/svg+xml" data="mapa.svg" width="800"  height="450"></object>
+
+        <svg width="450" height="480">
+            <g font-size="16" font-family="calibri" font-weight= "bold">
+                <text id="popis1" x="10" y="10"> 
+                    Rozdíl populace mezi vybraným krajem a ostatními kraji je:
+                </text>
+            </g>
+            <rect y="40" rx="5" ry="5" width="40" height="30" style="fill:#a63603"/>
+            <g font-size="13" font-family="calibri">
+                <text id="popis2" x="50" y="60">menší než 50 000</text>
+            </g>
+            <rect y="80" rx="5" ry="5" width="40" height="30" style="fill:#d94801"/>
+            <g font-size="13" font-family="calibri">
+                <text id="popis3" x="50" y="100">větší než 50 000 a menší nebo rovno 100 000</text>
+            </g>
+            <rect y="120" rx="5" ry="5" width="40" height="30" style="fill:#f16913"/>
+            <g font-size="13" font-family="calibri">
+                <text id="popis4" x="50" y="140">větší než 100 000 a menší nebo rovno 200 000</text>
+            </g>
+            <rect y="160" rx="5" ry="5" width="40" height="30" style="fill:#fd8d3c"/>
+            <g font-size="13" font-family="calibri">
+                <text id="popis5" x="50" y="180">větší než 200 000 a menší nebo rovno 300 000</text>
+            </g>
+            <rect y="200" rx="5" ry="5" width="40" height="30" style="fill:#fdae6b"/>
+            <g font-size="13" font-family="calibri">
+                <text id="popis6" x="50" y="220">větší než 300 000 a menší nebo rovno 400 000</text>
+            </g>
+            <rect y="240" rx="5" ry="5" width="40" height="30" style="fill:#fdd0a2"/>
+            <g font-size="13" font-family="calibri">
+                <text id="popis7" x="50" y="260">větší než 400 000 a menší nebo rovno 500 000</text>
+            </g>
+            <rect y="280" rx="5" ry="5" width="40" height="30" style="fill:#fee6ce"/>
+            <g font-size="13" font-family="calibri">
+                <text id="popis8" x="50" y="300">větší než 500 000 a menší nebo rovno 600 000</text>
+            </g>
+            <rect y="320" rx="5" ry="5" width="40" height="30" style="fill:#fff5eb"/>
+            <g font-size="13" font-family="calibri">
+                <text id="popis9" x="50" y="340">větší než 600 000</text>
+            </g>
+            <rect y="390" rx="5" ry="5" width="40" height="30" style="fill:#7f2704"/>
+            <g font-size="13" font-family="calibri">
+                <text id="popis10" x="50" y="410">vybraný kraj</text>
+            </g>
+        </svg>
+    </div>
+</body>
+</html>
